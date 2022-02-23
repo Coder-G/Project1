@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.epoint.ztb</groupId>
+		<artifactId>ztb-parent</artifactId>
+		<version>7.1.30.2</version>
+	</parent>
+
+	<groupId>com.epoint.ztb_wxhsq</groupId>
+	<artifactId>ZtbCustomMis_WXHSQ</artifactId>
+	<packaging>jar</packaging>
+
+	<dependencies>
+		<!-- 引用招投标 -->
+		<dependency>
+			<groupId>com.epoint.ztb</groupId>
+			<artifactId>ZtbCommon</artifactId>
+			<version>7.1.30.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.epoint.ztb</groupId>
+			<artifactId>ZtbMis.Bizlogic</artifactId>
+			<version>7.1.30.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.epoint.ztb</groupId>
+			<artifactId>CustomFrame4Bid</artifactId>
+			<version>7.1.30.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.epoint.ztb</groupId>
+			<artifactId>HuiYuanZtbMis.Bizlogic</artifactId>
+			<version>7.1.30.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.epoint.ztb</groupId>
+			<artifactId>JYZtbMis.Bizlogic</artifactId>
+			<version>7.1.30.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.epoint.ztb</groupId>
+			<artifactId>EpointBid_HuiYuan</artifactId>
+			<version>7.1.30.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.epoint.ztb</groupId>
+			<artifactId>Expert.Bizlogic</artifactId>
+			<version>7.1.30.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.epoint.ztb</groupId>
+			<artifactId>JYZtbMis</artifactId>
+			<version>7.1.30.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.epoint.ztb</groupId>
+			<artifactId>HuiYuanInfoMis2</artifactId>
+			<version>7.1.30.2</version>
+		</dependency>
+		<!-- 引用保证金平台 -->
+		<dependency>
+			<groupId>com.epoint.ztb.baozhengjin</groupId>
+			<artifactId>BZJServiceSDK</artifactId>
+			<version>2.0.0</version>
+		</dependency>
+		<!-- 个性化cxf -->
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-ws-security</artifactId>
+			<version>3.1.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.wss4j</groupId>
+			<artifactId>wss4j-ws-security-common</artifactId>
+			<version>2.1.5</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.bouncycastle</groupId>
+					<artifactId>bcprov-jdk15on</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!-- 个性化cxf需要在lib里加包 -->
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-jaxrs</artifactId>
+			<version>3.1.6</version>
+		</dependency>
+		<!-- 个性化业务 -->
+		<dependency>
+			<groupId>com.epoint.ztb</groupId>
+			<artifactId>ZtbCustomMis_WXHSQ.Bizlogic</artifactId>
+			<version>7.1.30.2</version>
+		</dependency>
+		<!-- 框架包 -->
+		<dependency>
+			<groupId>com.epoint.frame</groupId>
+			<artifactId>epoint-stireport-action</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.epoint.frame</groupId>
+			<artifactId>epoint-stireport-impl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.epoint.frame</groupId>
+			<artifactId>epoint-stireport-api</artifactId>
+		</dependency>
+		<!-- 环境容器 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- 引用第三方 -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>core</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache</groupId>
+			<artifactId>poi2</artifactId>
+			<version>2.0</version>
+		</dependency>
+
+		<!-- 混淆加密 -->
+		<dependency>
+			<groupId>com.allatori</groupId>
+			<artifactId>allatori</artifactId>
+		</dependency>
+	</dependencies>
+</project>
